@@ -23,6 +23,8 @@ idade = int(input("Digite sua idade: "))
 Para mostrar o dobro da idade informada:
 dobro = idade * 2 e print("O dobro da sua idade é: {}".format(dobro))
 
+Estrutura condicional - if: if idade >= 18:
+
 
 '''
 
@@ -43,3 +45,7 @@ idade = int(input("Digite sua idade: "))
 print("\nSeu nome é {} e você tem {} anos".format(nome, idade))
 dobro = idade * 2
 print("\nO dobro da sua idade é: {}".format(dobro))
+if idade >= 18:
+  print("\nJá pode beber")
+else:
+  print("\nNão use drogas")
