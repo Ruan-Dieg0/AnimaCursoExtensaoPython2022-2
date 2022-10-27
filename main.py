@@ -23,8 +23,8 @@ idade = int(input("Digite sua idade: "))
 Para mostrar o dobro da idade informada:
 dobro = idade * 2 e print("O dobro da sua idade é: {}".format(dobro))
 
-Estrutura condicional - if: if idade >= 18:
-
+Estrutura condicional (if): if idade >= 18:
+If e And juntos em um input: if idade >= 18 and genero == "M":
 
 '''
 
@@ -42,10 +42,13 @@ print("Meu nome é {} e tenho {} anos".format(nome, idade))
 #Aula 2:
 nome = input("Digite seu nome: ")
 idade = int(input("Digite sua idade: "))
+genero = input("Informe seu gênero, M= Masculino e F= Feminino: ")
 print("\nSeu nome é {} e você tem {} anos".format(nome, idade))
 dobro = idade * 2
-print("\nO dobro da sua idade é: {}".format(dobro))
+#print("\nO dobro da sua idade é: {}".format(dobro))
 if idade >= 18:
-  print("\nJá pode beber")
+  print("e já pode beber")
 else:
-  print("\nNão use drogas")
+  print("e não use drogas")
+if idade >= 18 and genero == "M":
+  print("\nServiço militar obrigatório")
