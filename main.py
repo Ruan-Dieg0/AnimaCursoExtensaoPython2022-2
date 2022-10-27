@@ -64,5 +64,6 @@ if nota >= 6 and nota < 7:
   print("Passou que nem nija")
 else:
   print("\nRelaxa po, só fazer ano que vem")
-
 '''
+
+#Organização do código dividido por aulas
