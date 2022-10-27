@@ -25,7 +25,7 @@ dobro = idade * 2 e print("O dobro da sua idade é: {}".format(dobro))
 
 Estrutura condicional (if): if idade >= 18:
 If e And juntos em um input: if idade >= 18 and genero == "M":
-
+Elif para condicionais extras
 '''
 
 #Aula 1:
@@ -38,9 +38,9 @@ print ("Meu nome e idade são: "+nome, idade)
 print (f"Meu nome e idade são: {nome} {idade}\n")
 print("Meu nome é {} e tenho {} anos".format(nome, idade))
 '''
-
+'''
 #Aula 2:
-nome = input("Digite seu nome: ")
+nome = input("Informe seu nome: ")
 idade = int(input("Digite sua idade: "))
 genero = input("Informe seu gênero, M= Masculino e F= Feminino: ")
 print("\nSeu nome é {} e você tem {} anos".format(nome, idade))
@@ -52,3 +52,17 @@ else:
   print("e não use drogas")
 if idade >= 18 and genero == "M":
   print("\nServiço militar obrigatório")
+'''
+
+  
+#Extra:
+nome = input("Informe seu nome: ")
+nota = float(input("Digite sua nota: "))
+if nota == 10:
+  print("\nNada mais que o mínimo")
+elif nota >= 7 and nota < 10:
+  print("Ta safe po, da pra passar")
+if nota >= 6 and nota < 7:
+  print("Passou que nem nija")
+else:
+  print("\nRelaxa po, só fazer ano que vem")
