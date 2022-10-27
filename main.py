@@ -66,4 +66,36 @@ else:
   print("\nRelaxa po, só fazer ano que vem")
 '''
 
-#Organização do código dividido por aulas
+
+
+
+
+
+
+
+
+
+
+
+#Implementação do estudando em uma única extrutura
+print("Olá, bem vindo a sua interface privada do usuário ✨")
+nome = input("\nInforme seu nome: ")
+senha = input("Escreva sua senha: ")
+if senha == "ruan":
+  print("\nAcesso liberado")
+else:
+  print("\nSenha incorreta. Tente novamente.")
+if senha == "ruan":
+  navbar = input("\nNotas   Faltas   Histórico\n->")
+
+if navbar == "notas" or navbar == "Notas":
+  print("\nNotas:\nPython: 9.8\nGithub: 9.9")
+elif navbar == "Faltas" or navbar == "faltas":
+  print("\nNenhuma falta registrada.")
+elif navbar == "Histórico" or navbar == "Historico" or navbar == "histórico" or navbar == "historico":
+  print("\nVocê ainda não possui notas registradas.")
+else:
+  print("\nOpção não identificada, escolha uma das listadas acima.")
+
+
+  
