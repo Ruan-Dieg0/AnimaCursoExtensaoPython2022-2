@@ -96,6 +96,3 @@ elif navbar == "Histórico" or navbar == "Historico" or navbar == "histórico" o
   print("\nVocê ainda não possui notas registradas.")
 else:
   print("\nOpção não identificada, escolha uma das listadas acima.")
-
-
-  
