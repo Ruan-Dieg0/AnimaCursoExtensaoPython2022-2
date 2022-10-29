@@ -172,3 +172,13 @@ board= [ [0,0,0],
 
 menu()
 #'''
+
+
+
+#Comandos da aula de Git
+#--help
+#git clone + link do repositório do github (Botão direito para colar)
+#git init (Criar repositório Git vazio)
+#git status ()
+
+
