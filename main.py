@@ -66,9 +66,30 @@ else:
   print("\nRelaxa po, só fazer ano que vem")
 '''
 
+'''
+//
+//Aula 3:
+//
+
+Laços
+Comando while para sequenciar (laço)
 
 
+Lista: ["morango", "laranja", "pera"]
+       print(frutas[3])
 
+Quantidade de itens na lista: (len())   *length = tamanho
+'''
+##Código Aula 3:
+#contador = 1
+
+#while(contador <= 10):
+  #print(contador)
+  #contador = contador+1
+
+frutas = ["morango", "laranja", "pera"]
+print(frutas[2])
+print(len(frutas))
 
 
 
@@ -96,8 +117,8 @@ elif navbar == "Histórico" or navbar == "Historico" or navbar == "histórico" o
   print("\nVocê ainda não possui notas registradas.")
 else:
   print("\nOpção não identificada, escolha uma das listadas acima.")
-#'''
-'''
+
+
 #Joguinho da velha
 def menu():
     continuar=1
@@ -171,7 +192,7 @@ board= [ [0,0,0],
          [0,0,0] ]
 
 menu()
-#'''
+'''
 
 
 
