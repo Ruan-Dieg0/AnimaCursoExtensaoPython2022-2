@@ -73,12 +73,14 @@ else:
 
 Laços
 Comando while para sequenciar (laço)
-
+Laço for: 
 
 Lista: ["morango", "laranja", "pera"]
        print(frutas[3])
 
+Adicionar item à lista: frutas.append("")
 Quantidade de itens na lista: (len())   *length = tamanho
+
 '''
 ##Código Aula 3:
 #contador = 1
@@ -90,6 +92,23 @@ Quantidade de itens na lista: (len())   *length = tamanho
 frutas = ["morango", "laranja", "pera"]
 print(frutas[2])
 print(len(frutas))
+frutas.append("manga")
+
+#i é uma variável
+i=0
+while(i<4):
+  print(frutas[i])
+  i = i + 1
+
+
+
+
+
+
+
+
+
+
 
 
 
