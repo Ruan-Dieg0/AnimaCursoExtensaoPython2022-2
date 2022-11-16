@@ -82,9 +82,6 @@ Lista: ["morango", "laranja", "pera"]
 Adicionar item à lista: frutas.append("")
 Quantidade de itens na lista: (len())   *length = tamanho
 
-
-
-
 ##Código Aula 3:
 contador = 1
 
@@ -106,7 +103,6 @@ while(i<4):
 for fruta in frutas:
   print(fruta)
 
-'''
 #Criando funções
 #calcular 5% de imposto, guardar na variável imposto
 preco = 200
@@ -123,6 +119,13 @@ preco = 100
 imposto = calcular_imposto(preco)
 print(imposto)
 
+//
+//Aula 4:
+//
+
+
+'''
+#Código Aula 4
 
 
 
