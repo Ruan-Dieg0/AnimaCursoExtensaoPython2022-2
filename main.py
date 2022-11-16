@@ -123,9 +123,24 @@ print(imposto)
 //Aula 4:
 //
 
-
+Para importar biblioteca: import sqlite3
+Para estabelecer conexão com o banco: sqlite3.connect()
+Para criar um objeto do tipo cursor:  cursor = conexao.cursor()
+Comando sql do banco: sql = "SELECT pessoa_id, nome, nome_civil, tipo FROM pessoas"
+Executar o comando sql no sqlite (No cursor): cursor.execute(sql)
+Exibir a consulta com todos os nomes do banco de dados:
+pessoas = cursor.fetchall()
 '''
 #Código Aula 4
+
+import sqlite3
+conexao = sqlite3.connect("dc_universe.db")
+cursor = conexao.cursor()
+sql = "SELECT pessoa_id, nome, nome_civil, tipo FROM pessoas"
+cursor.execute(sql)
+pessoas = cursor.fetchall()
+for pessoa in pessoas:
+  print(f"Nome: {pessoa[1]} ({pessoa[2]})")
 
 
 
