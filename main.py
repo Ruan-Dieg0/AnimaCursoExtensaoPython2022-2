@@ -130,7 +130,9 @@ Comando sql do banco: sql = "SELECT pessoa_id, nome, nome_civil, tipo FROM pesso
 Executar o comando sql no sqlite (No cursor): cursor.execute(sql)
 Exibir a consulta com todos os nomes do banco de dados:
 pessoas = cursor.fetchall()
-'''
+Comando para inserir nomes: sql = "INSERT INTO pessoas (pessoas_id, nome, nome_civil, tipo) VALUES (12, 'The Flash', 'Barry Allen', 'Herói(na)')"
+
+
 #Código Aula 4
 
 import sqlite3
@@ -141,6 +143,15 @@ cursor.execute(sql)
 pessoas = cursor.fetchall()
 for pessoa in pessoas:
   print(f"Nome: {pessoa[1]} ({pessoa[2]})")
+'''
+#Código Aula 4
+
+import sqlite3
+conexao = sqlite3.connect("dc_universe.db")
+cursor = conexao.cursor()
+sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (12, 'The Flash', 'Barry Allen', 'Herói(na)')"
+cursor.execute(sql)
+
 
 
 
