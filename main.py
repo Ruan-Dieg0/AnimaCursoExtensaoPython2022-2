@@ -143,18 +143,29 @@ cursor.execute(sql)
 pessoas = cursor.fetchall()
 for pessoa in pessoas:
   print(f"Nome: {pessoa[1]} ({pessoa[2]})")
-'''
-#Código Aula 4
+
 
 import sqlite3
 conexao = sqlite3.connect("dc_universe.db")
 cursor = conexao.cursor()
 sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (12, 'The Flash', 'Barry Allen', 'Herói(na)')"
 cursor.execute(sql)
+conexao.commit()
+conexao.close()
+'''
+#Código Aula 4
 
-
-
-
+import sqlite3
+def conectar():
+  conexao = sqlite3.connect("dc_universe.db")
+  cursor = conexao.cursor()
+  return conexao, cursor
+nome = input("Digite o nome do herói: ")
+nome_civil = input("Digite o nome do herói(civil): ")
+sql = "SELECT MAX(pessoa_id)+1 FROM pessoas"
+cursor.execute(sql)
+numero = cursor.fetchone()[0]
+numero 
 
 
 
