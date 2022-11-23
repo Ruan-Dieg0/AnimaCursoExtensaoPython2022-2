@@ -156,16 +156,27 @@ conexao.close()
 #Código Aula 4
 
 import sqlite3
-def conectar():
-  conexao = sqlite3.connect("dc_universe.db")
-  cursor = conexao.cursor()
-  return conexao, cursor
+conexao = sqlite3.connect("dc_universe.db")
+cursor = conexao.cursor()
+
+con, cur = bd.conectar()
 nome = input("Digite o nome do herói: ")
-nome_civil = input("Digite o nome do herói(civil): ")
-sql = "SELECT MAX(pessoa_id)+1 FROM pessoas"
-cursor.execute(sql)
-numero = cursor.fetchone()[0]
-numero 
+nome_civil = input("Informe o nome civil do herói: ")
+tipo_numerico = input("Tecle 1 para Herói ou 2 para Vilão")
+
+sql = "SELECT MAX(pessoa_id) FROM pessoas"
+cur.execute(sql)
+numero = cur.fetchone()[0]
+
+if tipo_numerico == "1":
+  tipo = "Herói(na)"
+else:
+  tipo = "Vilã(o)"
+
+sql = f"INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES ({pessoa_id}, '{nome}', '{nome_civil}', '{tipo}')"
+cur.execute(sql)
+con.commit()
+con.close()
 
 
 
